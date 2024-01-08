@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+
+:root{
+    --cor-principal: #000000;
+    --cor-secudaria: #ffffff;
+    --corterciaria: rgb(0, 102, 255);
+} 
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* height: 100vh; */
+    box-sizing: border-box;
+    background-color: var(--cor-principal);
+    color: var(--cor-secudaria);
+}
+
+
+
+a {
+    color: var(--cor-principal);
+    font-size: 1.5rem;
+}
+.cabecalho{
+    padding: 2% 0 0 15%;
+}
+.cabecalho-link{
+    font-size: 1.12rem;
+    font-family: 'Roboto Mono', monospace;
+    color: rgb(0, 102, 255);
+    margin: 0 10px;
+    padding: 5px 10px;
+    text-decoration: none;
+}
+.cabecalho-menu{
+    display: flex;
+
+}
+.apresentacao {
+    margin: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+}
+
+.apresentacao__conteudo {
+    width: 50%;
+    display: flex;
+    flex-direction: column; /* Alterado para column */
+    gap: 40px;
+}
+
+.apresentacao__conteudo_titulo {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 2.25rem;
+}
+.titulo-destaque {
+    color: rgb(0, 102, 255);
+}
+.apresentacao__conteudo_texto {
+    font-size: 1.5rem;
+    font-family: 'Roboto Mono', monospace; 
+}
+
+.icone-instagram {
+    max-width: 30px;
+    height: auto;
+    margin-right: 10px;
+}
+.iconegit{
+    max-width: 30px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.instagram-text {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 400;
+    font-size: 1.12rem;
+    color: rgb(0, 102, 255);
+}
+
+.link-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.apresentacao__links {
+    display: flex;
+    flex-direction: column; /* Adicionado para empilhar os links verticalmente */
+    gap: 12px;
+    align-items: center;
+}
+.apresentacao__links_subtitulo{
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 400;
+    font-size: 1.12rem;
+    color: rgb(0, 102, 255);
+}
+
+.apresentacao__links_link {
+    /* background-color: blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    color: #ffffff;
+    text-align: center;
+    border-radius:8px;
+    padding: 16.5px 0;
+    text-decoration: none;
+    border: 2px solid rgb(0, 102, 255);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.apresentacao__conteudo img {
+    width: 560px;
+    margin-left: auto;
+}
+.apresentacao__links_link:hover {
+    background-color: rgb(26, 26, 26);
+    transform: scale(1.05); /* Aumentando o tamanho em 5% */
+}
+.rodape{
+    padding: 24px;
+    background-color: rgb(0, 102, 255);
+    color: #000000;
+    text-align: center;
+    font-size: 0.93rem;
+    font-family: 'Roboto Mono', monospace;
+}
+.apresentacao__img{
+    width: 40%;
+}
+@media (max-width: 1300px){
+    .cabecalho{
+        padding: 5% ;
+    }
+    .cabecalho-menu{
+        justify-content: center;
+    }
+
+    .apresentacao{
+        flex-direction: column-reverse;
+        padding: 2%;
+
+    }
+    .apresentacao__conteudo{
+        width: auto;
+    }
+    .apresentacao__img{
+        width: 240px;
+        margin-left: auto;
+        padding: 0% 0%;
+        
+    }
+    .apresentacao__conteudo_titulo {
+        font-family: 'Roboto Mono', monospace;
+        font-size: 1.20rem;
+        text-align: center;
+    
+    }
+    .apresentacao__conteudo_texto{
+        font-size: 1.00rem;
+        text-align: center;
+    }
+    .apresentacao__links{
+        display: flex;
+        flex-direction: column; /* Adicionado para empilhar os links verticalmente */
+        gap: 6px;
+        align-items: center;
+}
+    .apresentacao__links_link{
+            /* background-color: blue; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 70%;
+        color: #ffffff;
+        text-align: center;
+        border-radius:8px;
+        padding: 16.5px 0;
+        text-decoration: none;
+        border: 2px solid rgb(0, 102, 255);
+        transition: background-color 0.3s, transform 0.3s;
+    }
+
+}
