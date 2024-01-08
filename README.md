@@ -1,2 +1,2 @@
 # portfolio
- portfolio desenvonvildo em HTML e CSS
+ portfolio desenvolvido em HTML e CSS
